@@ -32,7 +32,7 @@ from statsmodels.tsa.holtwinters import ExponentialSmoothing
 warnings.filterwarnings('ignore')
 
 # Read the dataset (adjust the path accordingly)
-data = pd.read_csv('/content/WMT.csv')
+data = pd.read_csv('/content/sales.csv')
 
 # Convert 'Date' to datetime format and set it as the index
 data['Date'] = pd.to_datetime(data['Date'], format='%m/%d/%Y')
